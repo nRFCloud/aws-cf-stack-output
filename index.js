@@ -1,3 +1,5 @@
+#!/bin/env node
+
 const { CloudFormation } = require('aws-sdk');
 
 const describeStack = async (cf, StackName) => {
