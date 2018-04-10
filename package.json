@@ -1,6 +1,6 @@
 {
   "name": "@nrfcloud/aws-cf-stack-output",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Echos the value of an AWS CloudFormation stack output",
   "repository": {
     "type": "git",
