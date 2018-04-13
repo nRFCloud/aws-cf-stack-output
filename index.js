@@ -1,4 +1,4 @@
-#!/bin/env node
+#!/usr/bin/env node
 
 const { CloudFormation } = require('aws-sdk');
 
