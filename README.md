@@ -8,3 +8,11 @@ Echos the value of an AWS CloudFormation stack output
 Usage: 
 
     npx @nrfcloud/aws-cf-stack-output <stackName> <outputName>
+
+## Setup
+To run the script, you need to configure access to your AWS account. 
+The recommended way is to [set up a shared credentials file 
+`.aws\credentials`](https://docs.aws.amazon.com/de_de/sdk-for-javascript/v2/developer-guide/loading-node-credentials-shared.html) 
+and [set the environment variable 
+`AWS_REGION`](https://docs.aws.amazon.com/de_de/sdk-for-javascript/v2/developer-guide/setting-region.html#setting-region-environment-variable) 
+to the value `us-east-1`.
