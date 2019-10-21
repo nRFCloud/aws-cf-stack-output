@@ -15,4 +15,9 @@ const cf = new CloudFormation();
 describeStack(cf, stackName)
   .then(Outputs => {
     console.log(Outputs[output]);
-  });
+  })
+  .catch((e) => {
+    console.error('******************************************');
+    console.error(e.message);
+    console.error('******************************************');
+  });  
