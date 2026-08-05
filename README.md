@@ -16,3 +16,13 @@ The recommended way is to [set up a shared credentials file
 and [set the environment variable 
 `AWS_REGION`](https://docs.aws.amazon.com/de_de/sdk-for-javascript/v2/developer-guide/setting-region.html#setting-region-environment-variable) 
 to the value `us-east-1`.
+
+## Node & NPM
+
+This project requires Node.js `>=12.0.0` and npm `>=12.0.2 <13` (enforced via
+`check-node-version` on `npm install` and `npm ci`).
+
+The check is skipped during `npm publish` and `npm pack`, because
+`semantic-release` bundles its own npm (`@semantic-release/npm` depends on
+`npm@^11.6.2`) and runs the publish with that version rather than the one
+installed in CI.

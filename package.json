@@ -20,19 +20,22 @@
   "dependencies": {
     "aws-sdk": "^2.476.0"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=12.0.0",
-    "npm": ">=6.0.0"
+    "npm": ">=12.0.2 <13"
   },
   "bin": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "case \"$npm_command\" in install|ci) check-node-version --package ;; esac"
   },
   "publishConfig": {
     "access": "public"
   },
   "release": {
     "branch": "saga"
+  },
+  "devDependencies": {
+    "check-node-version": "4.2.1"
   }
 }
